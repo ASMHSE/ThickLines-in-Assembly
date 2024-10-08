@@ -1,0 +1,44 @@
+#define RT_MANIFEST 24
+#define VOS_NT_WINDOWS32 262148
+#define VFT_APP 1
+#define MANIFEST 24
+#define CREATEPROCESS_MANIFEST_RESOURCE_ID 1
+#define VS_VERSION_INFO 1
+
+
+// include the MASM32 resource definition file
+#include "resource.h"
+
+
+CREATEPROCESS_MANIFEST_RESOURCE_ID MANIFEST "XpTheme.xml"
+
+// example ICON
+    10 ICON "bullets.ico"        // resource must exist to build resource file
+
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILEOS 0xFFFFFFFF
+FILETYPE 0x00000001
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "CompanyName", "Héctor S. Enrique\000\0"
+      VALUE "FileDescription", "Graphic Developments\000\0"
+      VALUE "FileVersion", "1.0\000\0"
+      VALUE "LegalCopyright", "\251 2024 Héctor S. Enrique\000\0"
+      VALUE "InternalName", "DoubleBresenham\0"
+      VALUE "OriginalFilename", "Lines.exe\0"
+      VALUE "ProductName", "Graphic Developments\000\0"
+      VALUE "ProductVersion", "1.0.0\0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0409, 0x04E4
+  END
+END
+
