@@ -17,7 +17,10 @@ Some remarks:
 
 - Lines drawing and connections happen in a buffer screen and you just can see the result.
 
-- Compact version (for development) use UASM assembler builded with more macros levels capacity (I hope unroll code ore other assemblers after additional tests).
+- Lines can be flat antialiased or a pipe (3D). This last is antialiased implicitly.
+
+- Compact version (for development) use UASM assembler builded with more macros levels capacity (I hope unroll code for other assemblers after additional tests).
 
 Any sugestion or improvement is welcome!
 
+![thick5](https://github.com/user-attachments/assets/dc874f76-7895-49e5-82c8-ec64a3cd3313)
